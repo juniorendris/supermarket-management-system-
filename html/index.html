@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        📦 Warehouse Inventory System
+    </div>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#insert">Add Product</a>
+        <a href="#update">Update</a>
+        <a href="#delete">Delete</a>
+        <a href="#search">Search</a>
+    </nav>
+
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+</header>
+
+<section class="hero">
+    <h1>Warehouse Inventory Dashboard</h1>
+    <p>
+        Manage products, track stock levels, monitor expiration dates, and perform operational tasks using single-table database architectures.
+    </p>
+</section>
+
+<section class="cards">
+    <div id="dashboard" class="card">
+        <h3>Products will be displayed here.</h3>
+    </div>
+</section>
+
+<section  class="form-section">
+    <h2>Add Product</h2>
+    <form id="insert">
+        <input type="text" id="sku" placeholder="SKU" name="sku" required>
+        <input type="text" id="product_name" placeholder="Product Name" name="product_name" required>
+        <input type="text" id="category" placeholder="Category" name="category" required>
+        <input type="number" id="price" step="0.01" placeholder="Price" name="price" required>
+        <input type="number" id="stock_quantity" placeholder="Stock Quantity" name="stock_quantity" required>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label style="font-size: 12px; color: var(--text-secondary); font-weight: 600; padding-left: 4px;">Expiration Date</label>
+            <input type="date" id="expiration_date" name="expiration_date">
+        </div>
+        <button type="submit">Add Product</button>
+    </form>
+</section>
+
+<section class="form-section">
+    <h2>View Products</h2>
+    <form id="view-products">
+        <button type="submit">View All Products</button>
+    </form>
+</section>
+
+<section class="form-section">
+    <h2>Update Product </h2>
+    <form id="update-products">
+        <input type="text" placeholder="Product SKU" id="update_sku" name="sku" required>
+        <input type="number" id="update_stock" placeholder="New Stock Quantity" name="stock_quantity" required>
+        <button type="submit">Update Product</button>
+    </form>
+</section>
+
+<section class="form-section">
+    <h2>Delete Product</h2>
+    <form id="delete-product">
+        <input type="text" id="delete_sku" placeholder="Product SKU" name="sku" required>
+        <button type="submit">Delete Product</button>
+    </form>
+</section>
+
+<section class="form-section">
+    <h2>Search Product</h2>
+    <form id="search-product">
+        <input type="text" id="search_category" placeholder="Search Category" name="keyword">
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<section id="low-stock-alert" class="alert-box">
+    <h2>⚠ Low Stock Alert</h2>
+    <p>Products with stock quantity less than minimum stock level will appear here.</p>
+</section>
+
+<section id="expiration-alert" class="alert-box">
+    <h2>⏳ Expiration Alert</h2>
+    <p>Products expiring within 7 days will appear here.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Warehouse Management System Console. Built for pure SQL CRUD processing.</p>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
