@@ -117,7 +117,7 @@ app.get('/search-product/:category', async(req, res)=>{
     const [rows] = await pool.query(searchCmd, [category]);
     if (!rows || rows.length === 0) {
       console.log(`No products found with category '${category}'.`);
-      return res.status(404).json({success: false, message: `No products found with category '${category}'.`}); // <-- Fixed: Added 'return'
+      return res.status(404).json({success: false, message: `No products found with category '${category}'.`}); 
     }
     console.log('Category products are found and displayed successfully.');
     res.status(200).json({success: true, data:rows});
