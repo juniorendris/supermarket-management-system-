@@ -24,16 +24,16 @@ Features
 ## 🖼️ Project Screenshots
 
 ### 1. Main Dashboard / Overview
-![Dashboard View](images/image1.png)
+![Dashboard View](src/images/image1.png)
 
 ### 2. Product & Inventory Management
-![Inventory View](images/image2.png)
+![Inventory View](src/images/image2.png)
 
 ### 3. Sales & Transactions
-![Sales View](images/image3.png)
+![Sales View](src/images/image3.png)
 
 ### 4. Reports & Analytics
-![Reports View](images/image4.png)
+![Reports View](src/images/image4.png)
 
 ---
 
@@ -44,18 +44,6 @@ Features
 - **Frontend:** HTML5, CSS3
 - **Version Control:** Git, GitHub
 
----
-
-## 📁 Project Structure
-
-```arduino
-firts_node_project/
-├── images/
-│   ├── image1.png
-│   ├── image2.png
-│   ├── image3.png
-│   └── image4.png
-├── app.js
 ├── package.json
 ├── package-lock.json
 └── README.md
