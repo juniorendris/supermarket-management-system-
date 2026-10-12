@@ -24,16 +24,16 @@ Features
 ## 🖼️ Project Screenshots
 
 ### 1. Main Dashboard / Overview
-![Dashboard View](src/images/image1.png)
+![Dashboard View](src/view/images/image1.png)
 
 ### 2. Product & Inventory Management
-![Inventory View](src/images/image2.png)
+![Inventory View](src/view/images/image2.png)
 
 ### 3. Sales & Transactions
-![Sales View](src/images/image3.png)
+![Sales View](src/view/images/image3.png)
 
 ### 4. Reports & Analytics
-![Reports View](src/images/image4.png)
+![Reports View](src/view/images/image4.png)
 
 ---
 
